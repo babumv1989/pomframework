@@ -23,5 +23,5 @@ class Test_AddNewPayee:
         self.addnewpayee.click_add_new_payee()
 
     @pytest.mark.parametrize("name, address, account, details", get_data())
-    def test_add_new_payee(self,name, address, account, details):
+    def test_add_new_payee(self, name, address, account, details):
         self.addnewpayee.do_enter_payee_details(name, address, str(account), details)
